@@ -1,4 +1,3 @@
-const debug = require('debug')('workspace-resolver');
 const _ = require('lodash');
 const join = require('path').join;
 const writeJsonFile = require('write-json-file');
