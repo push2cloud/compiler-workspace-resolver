@@ -1,6 +1,6 @@
 {
   "name": "push2cloud-compiler-workspace-resolver",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "makes paths in the deploymentConfig absolute",
   "main": "index.js",
   "scripts": {
