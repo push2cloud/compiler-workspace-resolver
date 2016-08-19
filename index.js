@@ -7,8 +7,8 @@ const resolver = {
     const config = require(deployConfigPath);
     const resolvedApps = _.map(config.apps, (app) => {
       if (tools.repoHash(app.source) === repoHash) {
-        app.path = join(rootDir, app.path);
-        app.source.path = join(rootDir, app.source.path);
+        app.path = join(rootDir, app.path || '');
+        app.source.path = join(rootDir, app.source.path || '');
         app.scripts = _.mapValues(app.scripts, (value, key) => {
           return _.map(value, (script) => script.replace('${rootDir}', rootDir));
         });
